@@ -10,13 +10,13 @@ function findNumbers(){
   let numbers = []
   for (var x = 0; x < matrix.length; x++){
     const line = matrix[x]
-    const numbers_in_line = find_numbers_in_line(x, line, matrix)
-    numbers = [...numbers, ...numbers_in_line]
+    const numbersInLine = findNumbersInLine(x, line, matrix)
+    numbers = [...numbers, ...numbersInLine]
   }
   return numbers
 }
 
-function find_numbers_in_line(x, line, matrix){
+function findNumbersInLine(x, line, matrix){
   let number = ""
   let nextToSymbol = false;
   const numbers = []
